@@ -42,6 +42,7 @@ function validator228(e) {
 
     if (isNaN(age.value) || 
         age.value < 0 ||
+        age.value.includes(" ") ||
         username.value.indexOf('user_', 0) ){
 
         alert('Eror! wrong inpute!');
