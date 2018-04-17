@@ -1,1 +1,1 @@
-[пример](https://jsfiddle.net/g2wkha1u/569/ "Parallax")
+[Parallax](https://jsfiddle.net/g2wkha1u/569/ "Parallax")
