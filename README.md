@@ -4,4 +4,4 @@
 
 [Localization](https://jsfiddle.net/artes/20fdwtx2/3/ "Localization")
 
-[Stop & prevent events](https://jsfiddle.net/artes/fteLy1ku/1/ "Stop & prevent events")
+[Stop & prevent events](https://jsfiddle.net/artes/fteLy1ku/2/ "Stop & prevent events")
