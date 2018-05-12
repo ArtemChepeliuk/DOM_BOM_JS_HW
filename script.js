@@ -1,7 +1,7 @@
 var form = document.createElement('form');
 form.id = 'myForm';
 form.name = 'login';
-// form.action = "google.com";
+form.action = "https://www.google.com.ua";
 
 var inpAge = document.createElement('input');
 inpAge.id = 'age';
@@ -15,8 +15,8 @@ inpUsername.placeholder = 'Username';
 
 var inpDate = document.createElement('input');
 inpDate.id = 'date';
-inpDate.type = 'date';
-inpDate.placeholder = "Date dd/mm/yyyy";
+inpDate.type = 'text';
+inpDate.placeholder = "mm/dd/yyyy";
 inpDate.value = moment().format('L');
 
 var inpSubmit = document.createElement('input');
@@ -31,29 +31,28 @@ form.insertAdjacentElement('beforeend', inpDate);
 form.insertAdjacentElement('beforeend', inpSubmit);
 
 
-function id(id) {return document.getElementById(id)};
+function id(id) {
+    return document.getElementById(id)
+};
 
 submit.addEventListener('click', validator228);
 
 
 function validator228(e) {
-    
-    e.preventDefault();
 
-    if (isNaN(age.value) || 
-        age.value < 0 || 
+
+
+    if (isNaN(age.value) ||
+        age.value < 0 ||
         age.value.includes("e") ||
         age.value.includes(" ") ||
+        (age.value === "") ||
+        (username.value === "") ||
         username.value.includes(" ") ||
-        username.value.indexOf('user_', 0) ){
-
+        username.value.indexOf('user_', 0) ||
+        date.value != moment().format('L')
+    ) {
         alert('Eror! wrong inpute!');
+        e.preventDefault();
     }
-    else {
-
-        alert('ok');
-    }
-    
 }
-
-
