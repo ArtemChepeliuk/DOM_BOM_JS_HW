@@ -39,9 +39,6 @@ submit.addEventListener('click', validator228);
 
 
 function validator228(e) {
-
-
-
     if (isNaN(age.value) ||
         age.value < 0 ||
         age.value.includes("e") ||
